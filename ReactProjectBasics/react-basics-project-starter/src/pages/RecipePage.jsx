@@ -226,7 +226,7 @@ export const RecipePage = ({ recipe, clickFn }) => {
           </Grid>
         </CardBody>
         <CardFooter>
-            <Tooltip label="Klik om terug te gaan naar het overzicht">
+            <Tooltip label="Go back to homepage">
                 <Button
                    borderRadius={"50%"}
                       bg="blue.400"
