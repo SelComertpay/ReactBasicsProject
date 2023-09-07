@@ -37,8 +37,8 @@ export const RecipePage = ({ recipe, clickFn }) => {
         width={["80%", "60%"]}
         boxShadow="2xl"
         bg="white"
-        //  onClick={() => clickFn(recipe)}
         cursor={"pointer"}
+        
       >
         <CardHeader>
           <Center>
@@ -86,25 +86,18 @@ export const RecipePage = ({ recipe, clickFn }) => {
                 {recipe.label}
               </Text>
               <Stack direction="row">
-                <Image
-                  src="/src/assets/MealTime.png"
-                  width={"25px"}
-                  alt="Cooking Time"
-                />
+                
                 <Text fontStyle={"italic"} fontSize={"sm"}>
-                  {recipe.totalTime} minutes
-                </Text>
+                  {"Cooking time: "}{recipe.totalTime} minutes
+                    </Text>
+                
               </Stack>
               <Stack direction="row">
-                <Image
-                  src="/src/assets/Servings.png"
-                  width={"25px"}
-                  alt="Servings"
-                />
                 <Text fontStyle={"italic"} fontSize={"sm"}>
-                  {recipe.yield} servings
+                  {"Amount of servings: "}{recipe.yield} servings
                 </Text>
-              </Stack>
+              
+                 </Stack>
               <Text fontWeight={"bold"} pt={3} color="orange.600">
                 Ingredients:
               </Text>
@@ -233,25 +226,23 @@ export const RecipePage = ({ recipe, clickFn }) => {
           </Grid>
         </CardBody>
         <CardFooter>
-          <Tooltip label="Click to go back to overview">
-            <Button
-              borderRadius={"50%"}
-              bg="blue.400"
-              w="40px"
-              h="40px"
-              p={2}
-              _hover={{ backgroundColor: "blue.200" }}
-            >
-              <Image
-                src="/src/assets/Back.png"
-                alt="Go back to overview"
-                onClick={() => clickFn()}
-                transform={"scale(2"}
-              />
-            </Button>
-          </Tooltip>
-        </CardFooter>
-      </Card>
-    </Center>
+            <Tooltip label="Klik om terug te gaan naar het overzicht">
+                <Button
+                   borderRadius={"50%"}
+                      bg="blue.400"
+                      w="40px"
+                      h="40px"
+                      p={2}
+                       _hover={{ backgroundColor: "blue.200" }}
+                       onClick={() => clickFn()}
+                       >
+                  Go Back
+                   </Button>
+                  </Tooltip>
+            </CardFooter>
+          </Card>
+        </Center>
   );
 };
+              
+             
