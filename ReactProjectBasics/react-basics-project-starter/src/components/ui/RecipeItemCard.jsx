@@ -32,7 +32,7 @@ export const RecipeItemCard = ({ recipe, clickFn }) => {
           <Image
             src={recipe.image}
             height={200}
-            width={"80%"}
+            width="auto"
             borderRadius={"xl"}
           />
         </Center>
