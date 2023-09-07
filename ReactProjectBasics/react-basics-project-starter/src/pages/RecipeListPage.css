@@ -1,7 +1,7 @@
 #font {
   font-family: Arial, sans-serif;
   font-size: 2rem;
-  color: #2e7d32; /* Green color for the text */
+  color: #2e7d32; 
   font-weight: bold;
   text-shadow: 0 0 10px #b8b8b8, 0 0 20px #9c9c9c, 0 0 30px #08e600;
   animation: bounce 1s ease-in-out infinite alternate;
