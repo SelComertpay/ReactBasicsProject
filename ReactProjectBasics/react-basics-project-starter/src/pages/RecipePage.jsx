@@ -89,7 +89,7 @@ export const RecipePage = ({ recipe, clickFn }) => {
                 <Image
                   src="/src/assets/MealTime.png"
                   width={"25px"}
-                  alt="Meal time"
+                  alt="Cooking Time"
                 />
                 <Text fontStyle={"italic"} fontSize={"sm"}>
                   {recipe.totalTime} minutes
@@ -99,7 +99,7 @@ export const RecipePage = ({ recipe, clickFn }) => {
                 <Image
                   src="/src/assets/Servings.png"
                   width={"25px"}
-                  alt="Amount of servings"
+                  alt="Servings"
                 />
                 <Text fontStyle={"italic"} fontSize={"sm"}>
                   {recipe.yield} servings
